@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iCoder-Heaven for programmers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Technology</a>
+                <a class="dropdown-item" href="#">Web Development</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Support</a>
+                <a class="dropdown-item" href="#">Write for us</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+
+          <br />
+          <div class="mx-2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#LoginModal"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#SignUpModal"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Login Modal-->
+    <div
+      class="modal fade"
+      id="LoginModal"
+      tabindex="-1"
+      aria-labelledby="LoginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="LoginModalLabel">
+              Login to iCoder
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--SignUp Modal-->
+    <div
+      class="modal fade"
+      id="SignUpModal"
+      tabindex="-1"
+      aria-labelledby="SignUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="SignUpModalLabel">
+              Create iCoder account
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="cexampleInputPassword1" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cexampleInputPassword1"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Create Account
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Carousel/Slider-->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to iCoder</h2>
+            <p>Technology News, Development and Trends.</p>
+            <button class="btn btn-danger">Technology</button>
+            <button class="btn btn-primary">Web Development</button>
+            <button class="btn btn-success">Tech Fun</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>The Best Coding Blog</h2>
+            <p>Technology News, Development and Trends.</p>
+            <button class="btn btn-danger">Technology</button>
+            <button class="btn btn-primary">Web Development</button>
+            <button class="btn btn-success">Tech Fun</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Award winning Blog</h2>
+            <p>Technology News, Development and Trends.</p>
+            <button class="btn btn-danger">Technology</button>
+            <button class="btn btn-primary">Web Development</button>
+            <button class="btn btn-success">Tech Fun</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+    </div>
+
+    <!--Card-->
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0">Globe Conferences</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="images/thumb1.jpg"
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <h3 class="mb-0">Learn Designing</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="images/thumb2.jpg"
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-danger">Front-End</strong>
+              <h3 class="mb-0">Bootstrap Templates</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="images/thumb3.jpg"
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-warning">Python</strong>
+              <h3 class="mb-0">Learn Python</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/
+                2wCEAAkGBxASEBAPDxIVDw8PDQ8PDQ8PEA8NDw8NFREWFhURF
+                RUYHSggGBolGxUVITEhJSsrLi4uFx8zODMsNyg
+                tLisBCgoKDg0OGhAQGi0dHx0rLS0rLS0rLS0tL
+                S0rKystKy0tLS0tLS0tKy0tLS0tLSstLTctLS0t
+                Ky0tLS0tLS0tLf/AABEIARMAtwMBIgACEQEDEQH/
+                xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/
+                xABFEAACAgECAwQIAwUFBAsAAAABAgADEQQhBRIx
+                BhNBUQcUIjJhcYGRI6GxFTNCUsFyc5LR0mKCou
+                EWJCVDRFNjdIOys//EABkBAAIDAQAAAAAAAAAAA
+                AAAAAIDAAEEBf/EACoRAAICAgEDAwMEAwAAAAAA
+                AAABAhEDEiEEEzEiQVEycYEUsdHwUmGR/9oADAM
+                BAAIRAxEAPwDdvXGTTJJjNlksUkNNUI01IhtbE
+                F5VhasSaRAtIiTZDW2SyaseWkQmUCF38Ysul2TV
+                iy0WrSLzQw0qwtCaGhEyJ3sLvpLK0J6COBJDqvk
+                pLZYLQ4FigsAYRQMsqgwsBh80bteQqhLWRHeZk
+                a62FXbKLokNmBBArxNt3KMyESseuvCjcwTF9peN
+                coxnxEEHYcsdeTeuhjLUS1FUS9UjJFFM9ER6vLR6Y
+                QqitzR23RWerQjp5aFRG2EJTQDxMqnpMaNBlw1YjL0y7BporRTB3UsB
+                RD7iU5IZGLZVNWY2UMtmqjRqEHcPtlcAZIrcyT6vC9XhqVipQSDSyOCyI7mH3
+                RhWLcUL7yIdooVw+7ksmqIbrCRZJeqElcgAaLKjjetCA77DrLq88qk/Cc07X6
+                5jlQdoEpc0PxQ4cn7Gf4/xLvGODtmCUGpfeHGxSSozTm5Oz1UDAYwHjgaKkzTCN
+                CXWNNHzG2EzSNcSHa0jNdJOoErbTvFcoeqZOSyOLvIFTSQtsJZGC8SJfKI05EZfUSDqNZK
+                2bL0SJNtojS2jMrLdZGa9XvGKLAbRpKsR3u5VaXV5lpRZmPgZcoruYfcSSixZAjjKQ+6h91JJxEMJCER6YnkAj7tiUfaDifd
+                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"
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="container">
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          © 2023–2024 Company, Inc. · <a href="#">Privacy</a> ·
+          <a href="#">Terms</a>
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
